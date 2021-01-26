@@ -1,0 +1,28 @@
+body[data-browser="safari"] header .site-title h1.title {
+  font-size: 21px;
+  text-align: center; }
+body[data-browser="safari"] .search-block .search-form .search-btn {
+  min-height: 35px;
+  top: -1px; }
+body[data-browser="safari"] .search-block input.active::placeholder {
+  line-height: 1.5;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  top: -3px;
+  position: relative; }
+body[data-browser="safari"] input::placeholder {
+  line-height: 1.4; }
+body[data-browser="safari"] .cart .cart-block .cart-form .table-body .table-body-cell.product-quantity .quantity-change {
+  line-height: 22px; }
+body[data-browser="safari"] .cart .cart-block .cart-form .table-body .table-body-cell.product-quantity input {
+  top: 0; }
+body[data-browser="safari"] .product-list .product-item .right-block .product-quantity .quantity-change {
+  line-height: 22px; }
+body[data-browser="safari"] .product-list .product-item .right-block .product-quantity input {
+  top: 0; }
+body[data-browser="safari"] .product-page .product-quantity .quantity-change {
+  line-height: 22px; }
+body[data-browser="safari"] .product-page .product-quantity input {
+  top: 0; }
+
+/*# sourceMappingURL=browser.css.map */
