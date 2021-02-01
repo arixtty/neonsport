@@ -122,7 +122,8 @@
 <link rel="stylesheet" href="modal_files/widget.css"></head>
 <body data-browser="firefox" data-platform="mac" class="inner product-category-65" style="top: -704px;"><div class="mfp-bg kw-flycart noti-overlay mfp-ready"></div><div class="mfp-wrap mfp-auto-cursor kw-flycart noti-overlay mfp-ready" tabindex="-1" style="top: 704px; position: absolute; height: 801px;"><div class="mfp-container mfp-s-ready mfp-inline-holder"><div class="mfp-content"><div id="flycart-notification" class="zoom-anim-dialog popup ng-scope advanced" ng:class="{'advanced': tools.noti_type === 'advanced'}">
 	<div class="flycart-noti-header">
-		<!-- ngIf: tools.noti_type === 'advanced' --><h3 class="notification-product-success noti-min ng-binding ng-scope" ng:if="tools.noti_type === 'advanced'" ng:bind-html="::tools.advanced_left_title_text[lang_id]">Товар добавлен в корзину!</h3><!-- end ngIf: tools.noti_type === 'advanced' -->
+        <!-- ngIf: tools.noti_type === 'advanced' --><h3 class="notification-product-success noti-min ng-binding ng-scope" ng:if="tools.noti_type === 'advanced'" ng:bind-html="::tools.advanced_left_title_text[lang_id]">Товар добавлен в корзину</h3><!-- end ngIf: tools.noti_type === 'advanced' -->
+        <h3 class="notification-product-success noti-max ng-binding" ng:bind-html="::tools.advanced_left_title_text[lang_id]">Товар добавлен в корзину</h3>
 
 		<span class="flycart-options-close" ng:click="popupClose();">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" enable-background="new 0 0 14 14" xml:space="preserve" width="15" height="15"><path d="M13.783968,2.3037212c0.288043-0.2881861,0.288043-0.7556047,0-1.0437908l-1.0437918-1.0437908 c-0.288043-0.2881861-0.755332-0.2881861-1.0437918,0L7.5220523,4.3908868c-0.2884603,0.2881861-0.7557487,0.2881861-1.0437918,0 L2.3035111,0.2161396c-0.288043-0.2881861-0.7553315-0.2881861-1.0433747,0L0.216345,1.2599304 c-0.28846,0.2881861-0.28846,0.7556047,0,1.0437908l4.1743326,4.1743317c0.2884598,0.2886019,0.2884598,0.7556047,0,1.0437908 l-4.1743326,4.174747C0.0779509,11.8350697,0,12.0226192,0,12.2184858c0,0.1954508,0.0779509,0.3834171,0.216345,0.5218954 l1.0437915,1.0437908c0.2880431,0.2877703,0.7553316,0.2877703,1.0433747,0l4.1747494-4.1751633 c0.288043-0.2877703,0.7553315-0.2877703,1.0437918,0l4.1743321,4.1751633c0.2884598,0.2877703,0.7557487,0.2877703,1.0437918,0 l1.0437918-1.0437908c0.1383934-0.1384783,0.2159281-0.3264446,0.2159281-0.5218954 c0-0.1958666-0.0775347-0.3834162-0.2159281-0.5218954l-4.1747494-4.174747c-0.288043-0.2881861-0.288043-0.7551889,0-1.0437908 L13.783968,2.3037212z"></path></svg>
@@ -132,7 +133,7 @@
 	<!-- ngIf: tools.noti_type === 'advanced' --><div class="flycart-container ng-scope" ng:if="tools.noti_type === 'advanced'">
 		<div class="left-notification" ng:class="{'full-width': tools.advanced_right === 'false'}">
 
-			<h3 class="notification-product-success noti-max ng-binding" ng:bind-html="::tools.advanced_left_title_text[lang_id]">Товар добавлен в корзину!</h3>
+		
 
 			<div class="notification-product-block related-parent">
 				<!-- ngIf: tools.advanced_image === 'true' --><a ng:href="https://www.neonsport.ru/batuty/batut-eclipse-inspire-8-ft/" class="related-links ng-scope" ng:if="tools.advanced_image === 'true'" href="https://www.neonsport.ru/batuty/batut-eclipse-inspire-8-ft/">
@@ -141,34 +142,10 @@
 				</a><!-- end ngIf: tools.advanced_image === 'true' -->
 
 				<div class="notification-product-info">
-					<div class="notification-product-name">
-						<!-- ngIf: tools.advanced_name === 'true' --><a ng:href="https://www.neonsport.ru/batuty/batut-eclipse-inspire-8-ft/" class="related-links ng-scope" ng:if="tools.advanced_name === 'true'" href="https://www.neonsport.ru/batuty/batut-eclipse-inspire-8-ft/">
-							<span ng:bind-html="::notifyProduct.name" class="ng-binding">Батут Eclipse Inspire 8 FT</span>
-						</a><!-- end ngIf: tools.advanced_name === 'true' -->
-					</div>
+					
 
-					<!-- ngIf: tools.advanced_price === 'true' && !notifyProduct.special_alone --><span class="notification-product-price ng-binding ng-scope" ng:bind-html="::notifyProduct.total_alone" ng:if="tools.advanced_price === 'true' &amp;&amp; !notifyProduct.special_alone">13 900 р.</span><!-- end ngIf: tools.advanced_price === 'true' && !notifyProduct.special_alone -->
-					<!-- ngIf: tools.advanced_price === 'true' && notifyProduct.special_alone -->
-					<!-- ngIf: tools.advanced_price === 'true' && notifyProduct.special_alone -->
-
-					<!-- ngIf: tools.advanced_sku === 'true' && notifyProduct.sku -->
-
-					<!-- ngIf: tools.advanced_brand === 'true' && notifyProduct.brand_name --><div class="notification-product-infos notification-product-params ng-scope" ng:if="tools.advanced_brand === 'true' &amp;&amp; notifyProduct.brand_name">
-						<span class="param-name ng-binding" ng:bind-html="::tools.manuf[lang_id]">Производитель:</span>
-						<a ng:href="https://www.neonsport.ru/index.php?route=product/manufacturer/info&amp;manufacturer_id=41" href="https://www.neonsport.ru/index.php?route=product/manufacturer/info&amp;manufacturer_id=41">
-							<span ng:bind-html="::notifyProduct.brand_name" class="ng-binding">Eclipse</span>
-						</a>
-					</div><!-- end ngIf: tools.advanced_brand === 'true' && notifyProduct.brand_name -->
-
-					<!-- ngIf: tools.advanced_model === 'true' && notifyProduct.model --><div class="notification-product-infos notification-product-params ng-scope" ng:if="tools.advanced_model === 'true' &amp;&amp; notifyProduct.model">
-						<span class="param-name ng-binding" ng:bind-html="::tools.model[lang_id]">Код товара:</span>
-						<span ng:bind-html="::notifyProduct.model" class="ng-binding">Inspire 8 FT</span>
-					</div><!-- end ngIf: tools.advanced_model === 'true' && notifyProduct.model -->
-
-					<!-- ngIf: tools.advanced_stock === 'true' -->
-
-					<!-- ngIf: tools.advanced_options === 'true' && tools.advanced_right === 'false' -->
-
+                    <!-- ngIf: tools.advanced_sku === 'true' && notifyProduct.sku -->
+                    
 				</div>
 			</div>
 
@@ -180,23 +157,25 @@
 
 		<!-- ngIf: tools.advanced_right === 'false' -->
 
-		<!-- ngIf: tools.advanced_right === 'true' --><div class="right-notification ng-scope" ng:if="tools.advanced_right === 'true'">
-			<!-- ngIf: tools.advanced_right_items === 'true' --><h3 class="notification-product-title ng-scope" ng:if="tools.advanced_right_items === 'true'">
-				<span ng:bind-html="::tools.advanced_right_title_text[lang_id]" class="ng-binding">Ваша корзина:</span>
-				<span ng:bind-html="notifyProduct.count | declension: tools.items_1[lang_id]: tools.items_2[lang_id]: tools.items_3[lang_id]" class="ng-binding">2 товара</span>
-			</h3><!-- end ngIf: tools.advanced_right_items === 'true' -->
-
-			<!-- ngIf: tools.advanced_right_items === 'false' -->
-
-			<div class="notification-totals">
-				<!-- ngRepeat: total in ::notifyProduct.totals --><div class="notification-total ng-scope" ng:repeat="total in ::notifyProduct.totals">
-					<span class="notification-total-label ng-binding" ng:bind-html="::total.title + ':'">Предварительная стоимость:</span>
-					<span class="notification-total-result ng-binding" ng:bind-html="::total.text">27 690 р.</span>
-				</div><!-- end ngRepeat: total in ::notifyProduct.totals -->
-			</div>
-
-			<!-- ngIf: tools.viewcart_advanced_btn === 'true' --><a ng:href="https://www.neonsport.ru/index.php?route=checkout/checkout" class="flycart-button tocart-button ng-binding ng-scope" ng:if="tools.viewcart_advanced_btn === 'true'" ng:bind-html="::tools.advanced_viewcart_btn[lang_id]" href="https://www.neonsport.ru/index.php?route=checkout/checkout">Оформить заказ</a><!-- end ngIf: tools.viewcart_advanced_btn === 'true' -->
-			<!-- ngIf: tools.continue_advanced_btn === 'true' --><a href="javascript:void(0);" ng:click="popupClose();" class="flycart-button close-button ng-binding ng-scope" ng:if="tools.continue_advanced_btn === 'true'" ng:bind-html="::tools.advanced_continue_btn[lang_id]">Продолжить покупки</a><!-- end ngIf: tools.continue_advanced_btn === 'true' -->
+        <!-- ngIf: tools.advanced_right === 'true' --><div class="right-notification ng-scope" ng:if="tools.advanced_right === 'true'">
+            
+            <div class="notification-product-info">
+                <div class="notification-product-name">
+    						<!-- ngIf: tools.advanced_name === 'true' --><a ng:href="https://www.neonsport.ru/batuty/batut-eclipse-inspire-8-ft/" class="related-links ng-scope" ng:if="tools.advanced_name === 'true'" href="https://www.neonsport.ru/batuty/batut-eclipse-inspire-8-ft/">
+    							<span ng:bind-html="::notifyProduct.name" class="ng-binding">Батут Eclipse Inspire 8 FT</span>
+    						</a><!-- end ngIf: tools.advanced_name === 'true' -->
+    					</div>
+    
+    					<!-- ngIf: tools.advanced_price === 'true' && !notifyProduct.special_alone --><span class="notification-product-price ng-binding ng-scope" ng:bind-html="::notifyProduct.total_alone" ng:if="tools.advanced_price === 'true' &amp;&amp; !notifyProduct.special_alone">13 900 р.</span><!-- end ngIf: tools.advanced_price === 'true' && !notifyProduct.special_alone -->
+    					<!-- ngIf: tools.advanced_price === 'true' && notifyProduct.special_alone -->
+                        <!-- ngIf: tools.advanced_price === 'true' && notifyProduct.special_alone -->
+                        
+            </div>
+			
+			<div class="modal-buttons">
+                            <!-- ngIf: tools.continue_advanced_btn === 'true' --><a href="javascript:void(0);" ng:click="popupClose();" class="flycart-button close-button ng-binding ng-scope" ng:if="tools.continue_advanced_btn === 'true'" ng:bind-html="::tools.advanced_continue_btn[lang_id]">Продолжить покупки</a><!-- end ngIf: tools.continue_advanced_btn === 'true' -->
+                            <!-- ngIf: tools.viewcart_advanced_btn === 'true' --><a ng:href="https://www.neonsport.ru/index.php?route=checkout/checkout" class="flycart-button tocart-button ng-binding ng-scope" ng:if="tools.viewcart_advanced_btn === 'true'" ng:bind-html="::tools.advanced_viewcart_btn[lang_id]" href="https://www.neonsport.ru/index.php?route=checkout/checkout">Перейти в корзину</a><!-- end ngIf: tools.viewcart_advanced_btn === 'true' -->
+            </div>
 		</div><!-- end ngIf: tools.advanced_right === 'true' -->
 	</div><!-- end ngIf: tools.noti_type === 'advanced' -->
 

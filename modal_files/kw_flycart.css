@@ -1029,24 +1029,14 @@ ng\:form {
 }
 
 #flycart-notification.advanced .flycart-options-close {
-	top: 25px;
+	top: 35px;
 	right: 25px;
 }
 
 #flycart-notification.advanced {
-	padding: 0;
+	padding: 35px;
 	height: auto;
 	position: relative;
-}
-
-#flycart-notification.advanced:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 50%;
-	border-left: 1px #ededed solid;
 }
 
 #flycart-notification.advanced a {
@@ -1054,7 +1044,8 @@ ng\:form {
 }
 
 #flycart-notification.advanced .notification-product-name a {
-	font-size: 14px;
+	font-size: 24px;
+	color: #000;
 }
 
 .notification-product-params {
@@ -1076,11 +1067,14 @@ ng\:form {
 }
 
 .left-notification {
-	width: 50%;
-	float: left;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 22px 25px 25px;
+	border: 1px solid #CBCBCB;
+	min-width: 160px;
+	min-height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .notification-product-block .notification-product-options {
@@ -1099,20 +1093,24 @@ ng\:form {
 }
 
 .right-notification {
-	width: 50%;
-	float: right;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 1;
-	padding: 22px 33px 25px 25px;
+	background-color: #fff;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	min-height: 130px;
+	padding-left: 35px;
 }
 
 .notification-product-success,
 .notification-product-title {
 	display: block;
 	margin: 0 0 24px;
-	font: 600 18px/24px "Open Sans",sans-serif !important;
+	font: 400 18px/30px "Roboto",sans-serif !important;
+	text-transform: uppercase;
 }
 
 .notification-product-title {
@@ -1139,8 +1137,6 @@ ng\:form {
 
 .notification-product-block {
 	overflow: hidden;
-	border-bottom: 1px #e0e0e0 solid;
-	padding-bottom: 13px;
 }
 
 #flycart-notification.popup .full-width .notification-product-info {
@@ -1152,15 +1148,20 @@ ng\:form {
 .notification-product-name,
 .notification-product-infos {
 	margin-bottom: 3px;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
 }
 
 .notification-product-price,
 .notification-product-price-old,
 .notification-product-price-special {
-	font-size: 14px;
-	margin: 0 5px 10px 0;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 10px 0;
 	display: inline-block;
-	color: #4c4c4c;
+	color: #097BD5;
 }
 
 .notification-product-options {
@@ -1192,7 +1193,6 @@ ng\:form {
 }
 
 .notification-total:last-child {
-	border-top: 1px #ccc dashed;
 	margin-top: 9px;
 	padding-top: 9px;
 	font-size: 15px;
@@ -1205,14 +1205,11 @@ ng\:form {
 }
 
 .notification-total-result {
-	float: right;
+
 }
 
 #flycart-notification .right-notification .flycart-button {
-	width: auto;
-	float: none;
 	display: block;
-	margin: 15px 10px 0px 10px;
 	padding: 12px;
 	font-size: 12px;
 	-webkit-box-sizing: border-box;
@@ -1255,20 +1252,10 @@ ng\:form {
 #flycart-notice .tocart-button,
 #flycart-notification .close-button,
 #flycart-notification .tocart-button {
-	width: -webkit-calc(50% - 5px);
-	width: -moz-calc(50% - 5px);
-	width: calc(50% - 5px);
-	float: left;
-	display: inline-block;
-	margin-right: 5px;
-	margin-top: 20px;
-	text-transform: uppercase;
+	
 	text-decoration: none;
 	font-size: 11px;
 	text-align: center;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
 	padding: 5px 9px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -1283,7 +1270,6 @@ ng\:form {
 	width: -webkit-calc(50% - 10px);
 	width: -moz-calc(50% - 10px);
 	width: calc(50% - 10px);
-	margin: 0 10px 0 0;
 	font-size: 12px;
 }
 
@@ -1291,14 +1277,19 @@ ng\:form {
 	width: -webkit-calc(50% - 10px);
 	width: -moz-calc(50% - 10px);
 	width: calc(50% - 10px);
-	margin: 0 0 0 10px;
 	font-size: 12px;
 }
 
 #flycart-notification.advanced .flycart-button {
-	margin-bottom: 15px;
-	padding: 10px 9px;
-	font-size: 12px;
+	border: 1px solid #097BD5;
+	padding: 10px 8px;
+	font-size: 16px;
+	min-width: 205px;
+	margin-right: 10px;
+}
+
+#flycart-notification.advanced .flycart-button:hover {
+	border: 1px solid rgba(56,176,227,1);
 }
 
 /*======================================================================
@@ -2726,14 +2717,14 @@ button::-moz-focus-inner {
 		  -webkit-transform: scale(1);
 		  transform: scale(1);
 	  }
-}.mfp-bg.default {background-color: rgba(0,0,0,0.9);background-image: url(https://www.neonsport.ru/kw_application/flycart/images/bg/carbon.png);}#flycart-dialog, #flycart-options-dialog {min-width: 300px;max-width: 560px;min-height: 200px;max-height: 560px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;background-color: rgba(250,250,250,1);color: rgba(76,76,76,1);}.flycart-options-header {background-color: rgba(245,245,245,1);-webkit-box-shadow: 0px 1px 0px rgba(167,167,167,0.05);box-shadow: 0px 1px 0px rgba(167,167,167,0.05);color: rgba(75,75,75,1);-webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;}.flycart-header-info {color: rgba(75,75,75,1);}.flycart-options-close {fill: rgba(123,123,123,1);}.flycart-options-close:hover {fill: rgba(153,144,144,1);}.flycart-product-name {margin-left: 65px;}.flycart-product-name a {color: rgba(56,176,227,1);}.flycart-product-name a:hover {color: rgba(119,201,236,1);}.maximum-alert {color: rgba(255,0,0,1.00);}.minimum-alert {color: rgba(255,0,0,1.00);}.flycart-product-total, .flycart-options-footer {color: rgba(0,0,0,1);}.flycart-product-total .kw-price-old, .flycart-options-footer .flycart-options-price-old {color: rgba(129,129,129,1.00);}.flycart-product-total .kw-price-new, .flycart-options-footer .flycart-options-price-special {color: rgba(255,13,13,1.00);}.flycart-product-remove-button {fill: rgba(163,163,163,1);}.flycart-product-remove-button:hover {fill: rgba(186,185,185,1);}#flycart-dialog .empty-cart {color: rgba(125,125,125,1.00);}.flycart-module-container .empty-cart {color: rgba(75,75,75,1);}.flycart-options-footer {background-color: rgba(245,245,245,1);-webkit-box-shadow: 0px -1px 0px rgba(167,167,167,0.05);box-shadow: 0px -1px 0px rgba(167,167,167,0.05);-webkit-border-radius: 0 0 3px 3px;border-radius: 0 0 3px 3px;}.flycart-footer-info {color: rgba(75,75,75,1);}.close-button {background-color: rgba(189,189,189,1.00) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.close-button:hover {background-color: rgba(177,177,177,1.00) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.checkout-button {background-color: rgba(34,178,43,1) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.checkout-button:hover {background-color: rgba(7,153,22,1.00) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.options-button {background-color: rgba(34,178,43,1) !important;color: rgba(255,255,255,1) !important;}.options-button:hover {background-color: rgba(7,153,22,1.00) !important;color: rgba(255,255,255,1) !important;}.flycart-options-button.flycart-button.options-button.loadind, .flycart-options-button.flycart-button.options-button.loadind:hover, .flycart-options-button.flycart-button.options-button.invalid, .flycart-options-button.flycart-button.options-button.invalid:hover {background-color: rgba(167,167,167,1.00) !important;color: rgba(255,255,255,1) !important;}.flycart-file-button {background-color: rgba(18,163,226,1.00) !important;color: rgba(255,255,255,1) !important;}.flycart-file-button.hover {background-color: rgba(30,138,210,1.00) !important;color: rgba(255,255,255,1) !important;}.coupon-button {background-color: rgba(167,167,167,1) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.coupon-button:hover {background-color: rgba(131,131,131,1) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}#flycart-widget {background: url(https://www.neonsport.ru/kw_application/flycart/images/widget/circle-with-blue-cart.png) no-repeat;background-size: 76px 76px;width: 76px;height: 76px;position: fixed;top: 100px;right: 3px;bottom: auto;left: auto;}#flycart-widget .flycart-widget-count {background: rgba(24,166,229,1.00);padding: 8px 8px 8px 8px;-webkit-border-radius: 50% 50% 50% 50%;border-radius: 50% 50% 50% 50%;left: 10px;top: 13px;font-size: 12px;line-height: 12px;color: rgba(255,255,255,1.00);}.mfp-bg.noti-overlay {background-color: rgba(0,0,0,0.6);background-image: url(https://www.neonsport.ru/kw_application/flycart/images/bg/carbon.png);}#flycart-notification.popup {min-width: 300px;max-width: 700px;min-height: 50px;max-height: 700px;-webkit-box-shadow: 1px 1px 5px rgba(46,46,46,0.36);box-shadow: 1px 1px 5px rgba(46,46,46,0.36);-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;background:rgba(255,255,255,1.00);}.flycart-noti-header {-webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;background: rgba(255,255,255,1.00);}#flycart-notification.popup h3 {color: rgba(34,178,43,1.00);}#flycart-notification.popup .notification-product-info {margin-left: 135px;}#flycart-notification.popup a {color: rgba(56,176,227,1.00);}#flycart-notification.popup a span {border-color: rgba(56,176,227,1.00);}#flycart-notification.popup a:hover {color: rgba(56,176,227,1);}#flycart-notification.popup .notification-product-options {color: rgba(171,171,171,1.00);}#flycart-notification.popup .notification-product-price {color: rgba(76,76,76,1.00);}#flycart-notification.popup .notification-product-price-old {color: rgba(129,129,129,1);}#flycart-notification.popup .notification-product-price-special {color: rgba(255,13,13,1);}#flycart-notification.popup .notification-product-params {color: rgba(101,101,101,1.00);}#flycart-notification.popup .close-button {background-color: rgba(189,189,189,1.00) !important;color: rgba(255,255,255,1) !important;}#flycart-notification.popup .close-button:hover {background-color: rgba(177,177,177,1.00) !important;color: rgba(255,255,255,1) !important;}#flycart-notification.popup .tocart-button {background-color: rgba(30,138,210,1.00) !important;color: rgba(255,255,255,1) !important;}#flycart-notification.popup .tocart-button:hover {background-color: rgba(44,156,230,1.00) !important;color: rgba(255,255,255,1) !important;}#flycart-notification.popup .flycart-options-close {fill: rgba(163,163,163,1);}#flycart-notification.popup .flycart-options-close:hover {fill: rgba(186,185,185,1);}#flycart-notification.advanced:after {background: rgba(250,250,250,1.00);}#flycart-notification.popup .right-notification {color: rgba(101,101,101,1.00);}#flycart-notification.popup .right-notification h3 {color: rgba(75,75,75,1.00);}#flycart-flyer {width: 70px;height: 70px;border: 1px rgba(231,231,231,1.00) solid;background-color: none;padding: 2px 2px 2px 2px;-webkit-animation-duration: 1s;animation-duration: 1s;}.flycart-product {
+}.mfp-bg.default {background-color: rgba(0,0,0,0.9);background-image: url(https://www.neonsport.ru/kw_application/flycart/images/bg/carbon.png);}#flycart-dialog, #flycart-options-dialog {min-width: 300px;max-width: 560px;min-height: 200px;max-height: 560px;-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;background-color: rgba(250,250,250,1);color: rgba(76,76,76,1);}.flycart-options-header {background-color: rgba(245,245,245,1);-webkit-box-shadow: 0px 1px 0px rgba(167,167,167,0.05);box-shadow: 0px 1px 0px rgba(167,167,167,0.05);color: rgba(75,75,75,1);-webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;}.flycart-header-info {color: rgba(75,75,75,1);}.flycart-options-close {fill: rgba(123,123,123,1);}.flycart-options-close:hover {fill: rgba(153,144,144,1);}.flycart-product-name {margin-left: 65px;}.flycart-product-name a {color: rgba(56,176,227,1);}.flycart-product-name a:hover {color: rgba(119,201,236,1);}.maximum-alert {color: rgba(255,0,0,1.00);}.minimum-alert {color: rgba(255,0,0,1.00);}.flycart-product-total, .flycart-options-footer {color: rgba(0,0,0,1);}.flycart-product-total .kw-price-old, .flycart-options-footer .flycart-options-price-old {color: rgba(129,129,129,1.00);}.flycart-product-total .kw-price-new, .flycart-options-footer .flycart-options-price-special {color: rgba(255,13,13,1.00);}.flycart-product-remove-button {fill: rgba(163,163,163,1);}.flycart-product-remove-button:hover {fill: rgba(186,185,185,1);}#flycart-dialog .empty-cart {color: rgba(125,125,125,1.00);}.flycart-module-container .empty-cart {color: rgba(75,75,75,1);}.flycart-options-footer {background-color: rgba(245,245,245,1);-webkit-box-shadow: 0px -1px 0px rgba(167,167,167,0.05);box-shadow: 0px -1px 0px rgba(167,167,167,0.05);-webkit-border-radius: 0 0 3px 3px;border-radius: 0 0 3px 3px;}.flycart-footer-info {color: rgba(75,75,75,1);}.close-button {background-color: rgba(189,189,189,1.00) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.close-button:hover {background-color: rgba(177,177,177,1.00) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.checkout-button {background-color: rgba(34,178,43,1) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.checkout-button:hover {background-color: rgba(7,153,22,1.00) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.options-button {background-color: rgba(34,178,43,1) !important;color: rgba(255,255,255,1) !important;}.options-button:hover {background-color: rgba(7,153,22,1.00) !important;color: rgba(255,255,255,1) !important;}.flycart-options-button.flycart-button.options-button.loadind, .flycart-options-button.flycart-button.options-button.loadind:hover, .flycart-options-button.flycart-button.options-button.invalid, .flycart-options-button.flycart-button.options-button.invalid:hover {background-color: rgba(167,167,167,1.00) !important;color: rgba(255,255,255,1) !important;}.flycart-file-button {background-color: rgba(18,163,226,1.00) !important;color: rgba(255,255,255,1) !important;}.flycart-file-button.hover {background-color: rgba(30,138,210,1.00) !important;color: rgba(255,255,255,1) !important;}.coupon-button {background-color: rgba(167,167,167,1) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}.coupon-button:hover {background-color: rgba(131,131,131,1) !important;color: rgba(255,255,255,1) !important;fill: rgba(255,255,255,1) !important;}#flycart-widget {background: url(https://www.neonsport.ru/kw_application/flycart/images/widget/circle-with-blue-cart.png) no-repeat;background-size: 76px 76px;width: 76px;height: 76px;position: fixed;top: 100px;right: 3px;bottom: auto;left: auto;}#flycart-widget .flycart-widget-count {background: rgba(24,166,229,1.00);padding: 8px 8px 8px 8px;-webkit-border-radius: 50% 50% 50% 50%;border-radius: 50% 50% 50% 50%;left: 10px;top: 13px;font-size: 12px;line-height: 12px;color: rgba(255,255,255,1.00);}.mfp-bg.noti-overlay {background-color: rgba(0,0,0,0.6);background-image: url(https://www.neonsport.ru/kw_application/flycart/images/bg/carbon.png);}#flycart-notification.popup {min-width: 300px;max-width: 700px;min-height: 50px;max-height: 700px;-webkit-box-shadow: 1px 1px 5px rgba(46,46,46,0.36);box-shadow: 1px 1px 5px rgba(46,46,46,0.36);-webkit-border-radius: 3px 3px 3px 3px;border-radius: 3px 3px 3px 3px;background:rgba(255,255,255,1.00);}.flycart-noti-header {-webkit-border-radius: 3px 3px 0 0;border-radius: 3px 3px 0 0;background: rgba(255,255,255,1.00);}#flycart-notification.popup h3 {color: #097BD5;}#flycart-notification.popup a {color: rgba(56,176,227,1.00);}#flycart-notification.popup a span {border-color: rgba(56,176,227,1.00);}#flycart-notification.popup a:hover {color: rgba(56,176,227,1);}#flycart-notification.popup .notification-product-options {color: rgba(171,171,171,1.00);}#flycart-notification.popup .notification-product-price {color: #097BD5;}#flycart-notification.popup .notification-product-price-old {color: rgba(129,129,129,1);}#flycart-notification.popup .notification-product-price-special {color: rgba(255,13,13,1);}#flycart-notification.popup .notification-product-params {color: rgba(101,101,101,1.00);}#flycart-notification.popup .close-button {background-color: #fff !important;color: #097BD5 !important;}#flycart-notification.popup .close-button:hover {color: rgba(56,176,227,1) !important;}#flycart-notification.popup .tocart-button {background-color: #097BD5 !important;color: rgba(255,255,255,1) !important;}#flycart-notification.popup .tocart-button:hover {background-color: rgba(44,156,230,1.00) !important;color: rgba(255,255,255,1) !important;}#flycart-notification.popup .flycart-options-close {fill: rgba(163,163,163,1);}#flycart-notification.popup .flycart-options-close:hover {fill: rgba(186,185,185,1);}#flycart-notification.popup .right-notification {color: rgba(101,101,101,1.00);}#flycart-notification.popup .right-notification h3 {color: rgba(75,75,75,1.00);}#flycart-flyer {width: 70px;height: 70px;border: 1px rgba(231,231,231,1.00) solid;background-color: none;padding: 2px 2px 2px 2px;-webkit-animation-duration: 1s;animation-duration: 1s;}.flycart-product {
   	border-bottom: 1px dashed #ccc;
 }
 
 .flycart-product-name a:not(.flycart-button),
 #flycart-notification a:not(.flycart-button):not(.light) {
   text-decoration: none;
-  background: -moz-linear-gradient(left, #38B0E3, #38B0E3 60%, transparent 60%);
+ /*  background: -moz-linear-gradient(left, #38B0E3, #38B0E3 60%, transparent 60%);
   background: -ms-linear-gradient(left, #38B0E3, #38B0E3 60%, transparent 60%);
   background: -o-linear-gradient(left, #38B0E3, #38B0E3 60%, transparent 60%);
   background: -webkit-gradient(linear, 0 0, 100% 0, from(#38B0E3), color-stop(0.6, #38B0E3), color-stop(0.6, transparent));
@@ -2741,7 +2732,7 @@ button::-moz-focus-inner {
   background: linear-gradient(left, #38B0E3, #38B0E3 60%, transparent 60%);
   background-size: 7px 1px;
   background-repeat: repeat-x;
-  background-position: 0 99%;
+  background-position: 0 99%; */
 }
 
 a.light {
@@ -2800,4 +2791,12 @@ a.light {
 @keyframes scrollOne {
 	0% { top: -200%; }
 	100% { top: -100%; }
+}
+
+.modal-buttons {
+	display: flex;
+}
+
+.flycart-container {
+	display: flex;
 }
