@@ -1266,7 +1266,7 @@ line-height: 30px;
 	margin: 20px 0 0 5px;
 }
 
-#flycart-notification .close-button {
+/* #flycart-notification .close-button {
 	width: -webkit-calc(50% - 10px);
 	width: -moz-calc(50% - 10px);
 	width: calc(50% - 10px);
@@ -1278,7 +1278,7 @@ line-height: 30px;
 	width: -moz-calc(50% - 10px);
 	width: calc(50% - 10px);
 	font-size: 12px;
-}
+} */
 
 #flycart-notification.advanced .flycart-button {
 	border: 1px solid #097BD5;
@@ -2799,4 +2799,26 @@ a.light {
 
 .flycart-container {
 	display: flex;
+}
+
+
+@media only screen and (max-width: 700px) {
+	#flycart-notification.advanced .flycart-button {
+		margin-right: 0;
+		max-width: 170px;
+		font-size: 14px;
+	}
+
+	.modal-buttons {
+		display: block;
+	}
+	.right-notification {
+		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.flycart-container {
+		flex-direction: column;
+	}
 }
