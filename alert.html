@@ -2747,23 +2747,38 @@ $(document).ready(function() {
     
 
     <!-- Modal alert -->
-    
+
     <div class="jquery-alert theme-light is-open" tabindex="0">
         <div class="alert-overlay" style="display: block;">
         </div>
         
-        <div class="alert-box" style="opacity: 1; display: block; margin-top: 60px;">
+        <!-- Тут позиция встроенным стилем задается в скрипте, видимо -->
+        <div class="alert-box" style="opacity: 1; display: block; margin-top: 0;">
             <div class="alert-message">
-                
-                Товар <a href="https://www.neonsport.ru/velotrenazhery/carbon-r100-velotrenazher/">Велотренажер CARBON R100</a> добавлен в Вашу <a href="https://www.neonsport.ru/cart/">корзину</a>! 
-                
-                <a class"notify-link"="" href="https://www.neonsport.ru/checkout/">Оформление заказа</a><img class="notify-img" src="alert_files/CARBON_R100______509e63cadb7ae-x.html">
-            
+                <div class="alert-message__top">
+                    <div class="alert-message__title">Товар добавлен в корзину</div>
+                    <div class="alert-message__close"><a href="#">&#10005;</a></div>
+                </div>
+                <div class="alert-message__content">
+                    <div class="alert-message__image">
+                        <img src="#" alt="#" class="alert-message__image-img">
+                    </div>
+    
+                    <div class="alert-message__info">
+                        <div class="alert-message__item">
+                            <a href="https://www.neonsport.ru/velotrenazhery/carbon-r100-velotrenazher/">Велотренажер CARBON R100</a> 
+                        </div>
+        
+                        <div class="alert-message__price">100500 млн</div>
+                        
+                        <div class="alert-message__buttons">
+                            <button class="btn-rect btn-rect--clear"><a href="#">Продолжить покупки</a></button>
+                            <button class="btn-rect btn-rect--blue"><a href="https://www.neonsport.ru/cart/">Перейти в корзину</a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <div class="alert-buttons">
-            <a href="#" class="button">Закрыть</a>
-        </div>
-    </div>
+          </div>
 
 </div>
 </body>

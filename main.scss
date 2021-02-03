@@ -1,3 +1,154 @@
-.alert-box {
-    
+.alert-message {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__close {
+    a {
+      font-size: 24px;
+      color: #9b9b9b;
+    }
+  }
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #097bd5;
+  }
+
+  &__content {
+    display: flex;
+    padding: 20px 0;
+
+    @media only screen and (max-width: 560px) {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__image {
+    flex: 0 0 25%;
+    margin-right: 20px;
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid #cbcbcb;
+
+    @media only screen and (max-width: 560px) {
+        margin-right: 0;
+      }
+
+    & img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__item {
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+
+    a {
+      font-family: Roboto, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #000;
+    }
+  }
+
+  &__price {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    color: #097bd5;
+  }
+
+  &__buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 960px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.btn-rect {
+  width: 45%;
+  padding: 10px 10px;
+  border: 1px solid #097bd5;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+  white-space: nowrap;
+
+  @media only screen and (max-width: 960px) {
+    width: 49%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px 2px;
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  &--blue {
+    background-color: #097bd5;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &--clear {
+    background-color: #fff;
+
+    a {
+      color: #097bd5;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
 }
