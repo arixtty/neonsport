@@ -319,3 +319,24 @@ overflow-x: hidden;
 
 
 }
+
+
+
+@media only screen and (max-width: 1080px) {
+    .ocf-offcanvas .ocf-offcanvas-body{
+            overflow-x: initial;
+            overflow-y: initial;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:1000;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    .ocf-offcanvas .ocfilter-mobile-handle .btn {
+            width: auto;
+        }
+}
